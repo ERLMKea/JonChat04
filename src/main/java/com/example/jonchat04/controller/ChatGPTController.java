@@ -39,7 +39,7 @@ public class ChatGPTController {
 
         ChatResponse response = webClient.post()
                 .contentType(MediaType.APPLICATION_JSON)
-                .headers(h -> h.setBearerAuth("sk-kB0mg16RNk3NhC3"))
+                .headers(h -> h.setBearerAuth("sk-kB0mg16RNk3IZlaVdjQ6Sv8Jb9KP4b0"))
                 .bodyValue(chatRequest)
                 .retrieve()
                 .bodyToMono(ChatResponse.class)
